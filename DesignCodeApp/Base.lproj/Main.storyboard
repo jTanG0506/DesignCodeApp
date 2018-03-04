@@ -44,6 +44,38 @@
                                                     <constraint firstAttribute="width" constant="123" id="HFy-ds-fBr"/>
                                                 </constraints>
                                             </imageView>
+                                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5N9-Uj-GuH">
+                                                <rect key="frame" x="234" y="168" width="50" height="50"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oZV-ob-3fH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kks-qc-6am">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <state key="normal" image="Action-Play-Small"/>
+                                                            <connections>
+                                                                <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hIK-KV-pEe"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="kks-qc-6am" secondAttribute="bottom" id="Uos-VK-FRy"/>
+                                                        <constraint firstItem="kks-qc-6am" firstAttribute="top" secondItem="oZV-ob-3fH" secondAttribute="top" id="a0H-Xm-AfU"/>
+                                                        <constraint firstItem="kks-qc-6am" firstAttribute="leading" secondItem="oZV-ob-3fH" secondAttribute="leading" id="ryD-FA-DSw"/>
+                                                        <constraint firstAttribute="trailing" secondItem="kks-qc-6am" secondAttribute="trailing" id="xY8-k8-OLe"/>
+                                                    </constraints>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="VFy-Pd-Ime"/>
+                                                    <constraint firstAttribute="height" constant="50" id="h3v-gQ-NLn"/>
+                                                </constraints>
+                                                <blurEffect style="dark"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </visualEffectView>
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoV-qr-aVR">
                                                 <rect key="frame" x="0.0" y="324" width="375" height="128"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qAd-OQ-IpU">
@@ -192,34 +224,6 @@
                                                 </constraints>
                                                 <blurEffect style="dark"/>
                                             </visualEffectView>
-                                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5N9-Uj-GuH">
-                                                <rect key="frame" x="234" y="168" width="50" height="50"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oZV-ob-3fH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <subviews>
-                                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Action-Play-Small" translatesAutoresizingMaskIntoConstraints="NO" id="scf-nK-hQ5">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="scf-nK-hQ5" firstAttribute="leading" secondItem="oZV-ob-3fH" secondAttribute="leading" id="YXa-1W-HVM"/>
-                                                        <constraint firstItem="scf-nK-hQ5" firstAttribute="top" secondItem="oZV-ob-3fH" secondAttribute="top" id="Yeb-rE-2jZ"/>
-                                                        <constraint firstAttribute="trailing" secondItem="scf-nK-hQ5" secondAttribute="trailing" id="pnC-nF-xur"/>
-                                                        <constraint firstAttribute="bottom" secondItem="scf-nK-hQ5" secondAttribute="bottom" id="tmM-A1-8g6"/>
-                                                    </constraints>
-                                                </view>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="VFy-Pd-Ime"/>
-                                                    <constraint firstAttribute="height" constant="50" id="h3v-gQ-NLn"/>
-                                                </constraints>
-                                                <blurEffect style="dark"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="25"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </visualEffectView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -339,6 +343,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <size key="freeformSize" width="375" height="2000"/>
+                    <connections>
+                        <outlet property="deviceImageView" destination="2Ve-Ep-xah" id="5jd-XL-SYz"/>
+                        <outlet property="playVisualView" destination="5N9-Uj-GuH" id="4KI-Rz-D4K"/>
+                        <outlet property="titleLabel" destination="Dag-Rk-TiD" id="EBc-K8-xig"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
