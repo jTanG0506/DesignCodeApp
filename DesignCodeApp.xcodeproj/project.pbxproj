@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D328E7C204D5E0A0040C056 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D328E7B204D5E0A0040C056 /* Data.swift */; };
+		8D328E7E204D5FBC0040C056 /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D328E7D204D5FBC0040C056 /* SectionCollectionViewCell.swift */; };
 		8D81C010204C78AC00A67033 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D81C00F204C78AC00A67033 /* SectionViewController.swift */; };
 		8D9B88F9204C374B0048BAC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B88F8204C374B0048BAC2 /* AppDelegate.swift */; };
 		8D9B88FB204C374B0048BAC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B88FA204C374B0048BAC2 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D328E7B204D5E0A0040C056 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		8D328E7D204D5FBC0040C056 /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		8D81C00F204C78AC00A67033 /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		8D9B88F5204C374B0048BAC2 /* DesignCodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9B88F8204C374B0048BAC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				8D9B88F8204C374B0048BAC2 /* AppDelegate.swift */,
 				8D9B88FA204C374B0048BAC2 /* ViewController.swift */,
 				8D81C00F204C78AC00A67033 /* SectionViewController.swift */,
+				8D328E7D204D5FBC0040C056 /* SectionCollectionViewCell.swift */,
+				8D328E7B204D5E0A0040C056 /* Data.swift */,
 				8D9B88FC204C374B0048BAC2 /* Main.storyboard */,
 				8D9B8902204C374B0048BAC2 /* Assets.xcassets */,
 				8D9B8904204C374B0048BAC2 /* LaunchScreen.storyboard */,
@@ -143,8 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D9B88FB204C374B0048BAC2 /* ViewController.swift in Sources */,
+				8D328E7C204D5E0A0040C056 /* Data.swift in Sources */,
 				8D9B88F9204C374B0048BAC2 /* AppDelegate.swift in Sources */,
 				8D81C010204C78AC00A67033 /* SectionViewController.swift in Sources */,
+				8D328E7E204D5FBC0040C056 /* SectionCollectionViewCell.swift in Sources */,
 				8D9B8901204C374B0048BAC2 /* DesignCodeApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
